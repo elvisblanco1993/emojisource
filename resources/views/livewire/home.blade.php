@@ -1,7 +1,4 @@
 <div>
-    <div class="text-center py-3 bg-red-600 text-white">
-        THIS SOFTWARE IS STILL A WORK IN PROGRESS. OFFICIAL RELEASE IS AUGUST 14, 2023.
-    </div>
     @include('layouts.nav')
     @include('layouts.hero')
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">

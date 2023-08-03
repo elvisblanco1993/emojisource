@@ -1,5 +1,5 @@
 <nav class="w-full h-16 flex items-center justify-between px-4 sm:px-6 lg:px-8">
-    <a href="">
+    <a href="/">
         <span class="text-2xl">👾</span>
         <span class="text-lg font-bold">emojisource</span>
     </a>

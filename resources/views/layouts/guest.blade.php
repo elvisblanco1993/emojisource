@@ -20,6 +20,7 @@
         <div class="font-sans antialiased">
             {{ $slot }}
         </div>
+        @include('layouts.footer')
         @livewireScripts
     </body>
 </html>
