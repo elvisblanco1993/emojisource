@@ -16,7 +16,7 @@
         <div class="mt-3 grid grid-cols-12 gap-4 text-2xl">
             @forelse ($emojis as $emoji)
                 <button aria-label="{{$emoji['unicode_name']}}" name="{{$emoji['unicode_name']}}" onclick="copyToClipboard('{{ $emoji['character'] }}')"
-                    class="m-1 w-full aspect-square border border-slate-700 hover:bg-slate-800 hover:border-indigo-600 rounded-lg">{{ $emoji['character'] }}</button>
+                    class="col-span-2 md:col-span-1 m-1 w-full aspect-square border border-slate-700 hover:bg-slate-800 hover:border-indigo-600 rounded-lg">{{ $emoji['character'] }}</button>
             @empty
             @endforelse
         </div>
