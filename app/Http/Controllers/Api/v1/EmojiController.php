@@ -13,6 +13,13 @@ class EmojiController extends Controller
      */
     public function index(Request $request)
     {
-        return Emoji::where('unicode_name', 'like', '%' . $request->search . '%')->get()->toJson();
+        return Emoji::where('unicode_name', 'like', '%' . $request->search . '%')->get([
+            'slug',
+            'character',
+            'unicode_name',
+            'code_point',
+            'group',
+            'subgroup',
+        ])->toJson();
     }
 }
